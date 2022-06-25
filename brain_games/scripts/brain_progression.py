@@ -17,10 +17,11 @@ def brain_progression():
             new_num = start_num + random_diff * x
             if x == random_hide:
                 correct_answer = str(new_num)
-            progression += '{0}, '.format(new_num)
+            progression += '{0} '.format(new_num)
 
         question_string = 'Question: {0}'.format(progression)
-        question_string = question_string.replace(', {0},'.format(correct_answer), ' ..')
+        question_string = question_string[:-1]
+        question_string = question_string.replace(str(correct_answer), '..')
 
         is_correct = ask_for_answer(question_string, str(correct_answer), name)
         if is_correct:
