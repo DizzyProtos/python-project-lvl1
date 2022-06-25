@@ -1,9 +1,9 @@
 import random
-# from brain_games.scripts.cli import welcome_user, ask_for_answer
+from brain_games.scripts.cli import welcome_user, ask_for_answer
 
 
 def brain_progression():
-    # name = welcome_user()
+    name = welcome_user()
     print('What number is missing in the progression?')
     correct_count = 0
     while correct_count < 3:
