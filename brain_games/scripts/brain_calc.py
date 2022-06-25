@@ -25,7 +25,7 @@ def brain_calc():
         if is_correct:
             correct_count += 1
         else:
-            correct_count = 0
+            return
 
     print('Congratulations, {0}!'.format(name))
 
