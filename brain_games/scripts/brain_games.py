@@ -27,14 +27,14 @@ def get_hello_string(game_type):
 
 
 def brain_even_question():
-    some_number = int(random.random() * 100)
+    some_number = get_random_number(1, 100)
     question_string = 'Question: {0}'.format(some_number)
     correct_answer = 'yes' if some_number % 2 == 0 else 'no'
     return question_string, correct_answer
 
 
 def brain_prime_question():
-    random_num = int(random.random() * 100)
+    random_num = get_random_number(1, 100)
     correct_answer = 'yes' if is_prime(random_num) else 'no'
     question_string = 'Question: {0}'.format(random_num)
     return question_string, correct_answer
@@ -60,16 +60,16 @@ def brain_progression_question():
 
 
 def brain_gcd_question():
-    first_num = int(random.random() * 100)
-    sec_num = int(random.random() * 100)
+    first_num = get_random_number(1, 100)
+    sec_num = get_random_number(1, 100)
     correct_answer = math.gcd(first_num, sec_num)
     question_string = 'Question: {0} {1}'.format(first_num, sec_num)
     return question_string, correct_answer
 
 
 def brain_calc_question():
-    fst_num = int(random.random() * 100)
-    sec_num = int(random.random() * 100)
+    fst_num = get_random_number(1, 100)
+    sec_num = get_random_number(1, 100)
     operation_choice = random.random()
     if operation_choice < 0.3:
         symb = '+'
