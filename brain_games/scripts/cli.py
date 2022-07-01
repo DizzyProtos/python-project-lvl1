@@ -1,9 +1,4 @@
 import prompt
-import random
-
-
-def get_random_number(min_limit, max_limit):
-    return int(min_limit + random.random() * (max_limit - min_limit))
 
 
 def is_prime(n):
