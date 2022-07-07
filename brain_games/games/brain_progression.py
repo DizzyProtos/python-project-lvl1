@@ -1,6 +1,9 @@
 from random import randint
 
 
+hello_string = 'What number is missing in the progression?'
+
+
 def brain_progression_question():
     progression_length = 10
 

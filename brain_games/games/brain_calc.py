@@ -1,6 +1,9 @@
 from random import randint
 
 
+hello_string = 'What is the result of the expression?'
+
+
 def brain_calc_question():
     fst_num = randint(1, 100)
     sec_num = randint(1, 100)

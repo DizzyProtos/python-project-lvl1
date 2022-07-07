@@ -1,5 +1,9 @@
 from random import randint
-from brain_games.scripts.cli import is_prime
+from brain_games.cli import is_prime
+
+
+hello_string = 'Answer "yes" if given number is prime. '\
+               'Otherwise answer "no".'
 
 
 def brain_prime_question():

@@ -2,6 +2,9 @@ import math
 from random import randint
 
 
+hello_string = 'Find the greatest common divisor of given numbers.'
+
+
 def brain_gcd_question():
     first_num = randint(1, 100)
     sec_num = randint(1, 100)

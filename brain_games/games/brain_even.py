@@ -1,6 +1,9 @@
 from random import randint
 
 
+hello_string = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
 def brain_even_question():
     some_number = randint(1, 100)
     question_string = '{0}'.format(some_number)

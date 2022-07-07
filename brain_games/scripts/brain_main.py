@@ -1,5 +1,5 @@
-from brain_games.scripts.cli import ask_for_answer
-from brain_games.scripts.cli import welcome_user
+from brain_games.cli import ask_for_answer
+from brain_games.cli import welcome_user
 
 
 def base_game(hello_string, get_question_function):
