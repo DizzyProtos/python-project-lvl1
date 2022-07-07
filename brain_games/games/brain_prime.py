@@ -6,7 +6,7 @@ hello_string = 'Answer "yes" if given number is prime. '\
                'Otherwise answer "no".'
 
 
-def brain_prime_question():
+def get_question_function():
     random_num = randint(1, 100)
     correct_answer = 'yes' if is_prime(random_num) else 'no'
     question_string = '{0}'.format(random_num)

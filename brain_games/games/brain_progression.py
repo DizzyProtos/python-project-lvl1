@@ -4,7 +4,7 @@ from random import randint
 hello_string = 'What number is missing in the progression?'
 
 
-def brain_progression_question():
+def get_question_function():
     progression_length = 10
 
     random_diff = randint(1, 15)
