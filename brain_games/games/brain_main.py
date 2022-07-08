@@ -5,6 +5,7 @@ def get_name_and_greet():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
+    return name
 
 
 def run_game(game):
