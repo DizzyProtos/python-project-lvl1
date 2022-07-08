@@ -1,5 +1,11 @@
 from random import randint
-from brain_games.cli import is_prime
+
+
+def is_prime(n):
+    for i in range(2, n):
+        if (n % i) == 0:
+            return False
+    return True
 
 
 hello_string = 'Answer "yes" if given number is prime. '\
