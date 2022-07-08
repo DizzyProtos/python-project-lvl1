@@ -1,7 +1,10 @@
 from random import randint
 
 
-def is_prime(n):
+def _is_prime(n):
+    if n <= 1:
+        return False
+    
     for i in range(2, n):
         if (n % i) == 0:
             return False
@@ -9,11 +12,11 @@ def is_prime(n):
 
 
 HELLO_MESSAGE = 'Answer "yes" if given number is prime. '\
-               'Otherwise answer "no".'
+                'Otherwise answer "no".'
 
 
 def get_question_with_answer():
-    random_num = randint(1, 100)
-    correct_answer = 'yes' if is_prime(random_num) else 'no'
+    random_num = randint(2, 100)
+    correct_answer = 'yes' if _is_prime(random_num) else 'no'
     question = '{0}'.format(random_num)
     return question, correct_answer
