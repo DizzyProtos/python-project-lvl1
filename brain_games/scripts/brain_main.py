@@ -1,4 +1,4 @@
-from brain_games.games.brain_main import run_game
+from brain_games.games.brain_main import run_game, get_name_and_greet
 
 
 def run_brain_game(game):
@@ -6,7 +6,7 @@ def run_brain_game(game):
 
 
 def main():
-    pass
+    get_name_and_greet()
 
 
 if __name__ == '__main__':

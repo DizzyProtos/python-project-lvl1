@@ -1,11 +1,14 @@
 import prompt
 
 
-def run_game(game):
+def get_name_and_greet():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
 
+
+def run_game(game):
+    name = get_name_and_greet()
     print(game.HELLO_MESSAGE)
     correct_count = 0
     points_to_win = 3
