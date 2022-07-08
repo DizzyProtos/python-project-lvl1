@@ -21,7 +21,7 @@ def run_game(game):
             print('Correct!')
             correct_count += 1
         else:
-            print(f"'{answer}' is wrong answer" \
+            print(f"'{answer}' is wrong answer"
                   f"Correct answer was {correct_answer}")
             print("Let's try again, {0}!".format(name))
             return
