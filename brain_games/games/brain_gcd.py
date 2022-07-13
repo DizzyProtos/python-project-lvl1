@@ -10,4 +10,4 @@ def get_question_with_answer():
     sec_num = randint(1, 100)
     correct_answer = math.gcd(first_num, sec_num)
     question = '{0} {1}'.format(first_num, sec_num)
-    return question, correct_answer
+    return question, str(correct_answer)

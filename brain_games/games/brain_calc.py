@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choice
 
 
 HELLO_MESSAGE = 'What is the result of the expression?'
@@ -19,9 +19,9 @@ def get_question_with_answer():
     sec_num = randint(1, 100)
 
     math_symbols = ['+', '-', '*']
-    operation_choice = randint(0, len(math_symbols) - 1)
+    operation_choice = choice(math_symbols)
     symb = math_symbols[operation_choice]
     correct_answer = _calculate_answer(fst_num, sec_num, symb)
 
     question = '{0} {1} {2}'.format(fst_num, symb, sec_num)
-    return question, correct_answer
+    return question, str(correct_answer)
