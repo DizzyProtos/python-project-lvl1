@@ -19,8 +19,7 @@ def get_question_with_answer():
     sec_num = randint(1, 100)
 
     math_symbols = ['+', '-', '*']
-    operation_choice = choice(math_symbols)
-    symb = math_symbols[operation_choice]
+    symb = choice(math_symbols)
     correct_answer = _calculate_answer(fst_num, sec_num, symb)
 
     question = '{0} {1} {2}'.format(fst_num, symb, sec_num)
