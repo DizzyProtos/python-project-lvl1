@@ -5,7 +5,7 @@ def run(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
-    
+
     print(game.HELLO_MESSAGE)
     correct_count = 0
     points_to_win = 3
